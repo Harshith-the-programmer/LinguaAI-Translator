@@ -1,0 +1,326 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+.stApp {
+    background: #F8FAFC;
+}
+
+#MainMenu,
+footer,
+header {
+    visibility: hidden;
+}
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 10px 30px rgba(118, 75, 162, 0.25);
+}
+
+.hero,
+.hero h1,
+.hero p {
+    color: white !important;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 42px;
+}
+
+.hero p {
+    opacity: 0.95;
+    font-size: 16px;
+}
+
+/* =========================================
+   STATS CARDS
+========================================= */
+
+.metric-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+}
+
+.metric-card h2 {
+    color: #764ba2 !important;
+    margin: 0;
+    font-size: 32px;
+}
+
+.metric-card p {
+    margin-top: 8px;
+    color: #64748B;
+}
+
+/* =========================================
+   DROPDOWNS
+========================================= */
+
+div[data-baseweb="select"] > div {
+    background: white !important;
+    border: 2px solid #E5E7EB !important;
+    border-radius: 14px !important;
+    min-height: 50px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+/* Selected value (English, Hindi, etc.) */
+.stSelectbox div[data-baseweb="select"] div {
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+}
+
+/* Selected value text */
+.stSelectbox div[data-baseweb="select"] span {
+    color: #111827 !important;
+    font-weight: 500 !important;
+}
+
+/* Input inside select */
+.stSelectbox input {
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+}
+
+/* Dropdown menu items */
+div[role="listbox"] div {
+    color: #111827 !important;
+}
+
+/* Hover */
+div[data-baseweb="select"]:hover > div {
+    border-color: #764ba2 !important;
+}
+
+/* Arrow */
+div[data-baseweb="select"] svg {
+    fill: #764ba2 !important;
+}
+
+/* =========================================
+   TEXT AREAS
+========================================= */
+
+textarea {
+
+    background: white !important;
+
+    color: #111827 !important;
+
+    border: 2px solid #E5E7EB !important;
+
+    border-radius: 16px !important;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+    padding: 12px !important;
+}
+
+textarea:focus {
+    border-color: #764ba2 !important;
+}
+
+textarea:disabled {
+
+    background: #FFFFFF !important;
+
+    color: #111827 !important;
+
+    -webkit-text-fill-color: #111827 !important;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.stButton > button,
+.stDownloadButton > button {
+
+    width: 100%;
+
+    height: 52px;
+
+    border: none !important;
+
+    border-radius: 14px !important;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    ) !important;
+
+    color: white !important;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 6px 18px rgba(118,75,162,0.25);
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 24px rgba(118,75,162,0.35);
+}
+
+.stButton button *,
+.stDownloadButton button * {
+    color: white !important;
+}
+
+/* =========================================
+   RESULT CARD
+========================================= */
+
+.result-box {
+
+    background: white;
+
+    border-left: 5px solid #764ba2;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   HISTORY SECTION
+========================================= */
+
+[data-testid="stAlert"] {
+    color: #111827 !important;
+}
+
+[data-testid="stAlert"] * {
+    color: #111827 !important;
+}
+
+.streamlit-expanderHeader {
+
+    color: #111827 !important;
+
+    font-weight: 600 !important;
+
+    background: white !important;
+
+    border-radius: 12px;
+}
+
+.stExpander {
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.stExpander * {
+    color: #111827 !important;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    color: #64748B;
+
+    font-size: 14px;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #764ba2;
+    border-radius: 10px;
+}
+
+/* =========================================
+   HISTORY TEXT FIX
+========================================= */
+
+/* Translation History Heading */
+h3, h4 {
+    color: #111827 !important;
+}
+
+/* Expander Header Text */
+.streamlit-expanderHeader {
+    color: #111827 !important;
+    font-weight: 600 !important;
+}
+
+/* Expander Content */
+.stExpander p,
+.stExpander div,
+.stExpander span {
+    color: #111827 !important;
+}
+
+/* Info Box */
+[data-testid="stAlert"] {
+    background: white !important;
+    color: #111827 !important;
+    border: 1px solid #E5E7EB !important;
+}
+
+[data-testid="stAlert"] * {
+    color: #111827 !important;
+}
