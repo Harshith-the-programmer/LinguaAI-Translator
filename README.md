@@ -20,6 +20,7 @@ A modern language translation web app built using Streamlit and Deep Translator.
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
 
 ## Home Page
 
