@@ -21,6 +21,14 @@ A modern language translation web app built using Streamlit and Deep Translator.
 pip install -r requirements.txt
 streamlit run app.py
 
-## Preview
+## Home Page
 
-![LinguaAI Translator](assets/screenshot.png)
+![Home](assets/home.png)
+
+## Translation Result
+
+![Translation](assets/translation.png)
+
+## History Feature
+
+![History](assets/history.png)
